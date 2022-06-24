@@ -6,12 +6,11 @@ body{
 
 }
 .box{
-  max-width: 1440px;
+  max-width: 1000px;
   display: flex;
   justify-content: space-between;
   background-color: hsl(244, 38%, 16%);
-height: 25rem;
-  transform: translate(1%,32%);
+  transform: translate(27%,50%);
   border-radius: 8px;
 
 
@@ -23,7 +22,7 @@ height: 25rem;
   align-self: center;
 }
 .box .info .top{
-  width: 50%;
+  width: 70%;
 }
 .box .info .top .des{
 line-height: 1.5;
