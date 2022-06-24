@@ -1,0 +1,113 @@
+body{
+  font-size:  15px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(233, 47%, 7%);
+  font-family: 'Inter', sans-serif;
+
+}
+.box{
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  background-color: hsl(244, 38%, 16%);
+height: 25rem;
+  transform: translate(1%,32%);
+  border-radius: 8px;
+
+
+}
+.box .info{
+  flex: 1;
+  padding: 2rem;
+  padding-right: 0;
+  align-self: center;
+}
+.box .info .top{
+  width: 50%;
+}
+.box .info .top .des{
+line-height: 1.5;
+color:  hsla(0, 0%, 100%, 0.6);
+font-size: 0.8rem;
+}
+
+.box span{
+  color:hsl(277, 64%, 61%); ;
+}
+.box .img{
+  position: relative;
+  background-image: url("../public/card-img.jpg");
+  background-size: cover;
+  flex: 1;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.box .img .overlay{
+  mix-blend-mode: multiply;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color:  hsl(277, 64%, 61%);
+  opacity: 0.8;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.anlyustec{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.anlyustec p{
+text-transform: uppercase;
+margin: 0;
+font-size: 0.7rem;
+color:  hsla(0, 0%, 100%, 0.6);
+
+}
+
+.anlyustec h1{
+font-size:1.5rem ;
+margin-bottom: 8px;
+}
+@media(max-width:767px){
+  .box{
+  max-width:  375px;
+  text-align: center;
+  flex-direction: column-reverse;
+  transform: translate(3%,11%);
+  height: 47rem;
+  border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+  }
+  .box .info{
+      padding: 1rem ;
+
+  }
+  .box .info .top{
+      width: 100%;
+  }
+
+  .box .info .top .des {
+              font-size: 1rem;
+  }
+  .anlyustec{
+      flex-direction: column;
+  }
+  .box .img{
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+
+
+  }
+  .box .overlay{
+      border-bottom-right-radius: 0;
+      border-top-left-radius: 15px; 
+      border-top-right-radius: 15px; 
+  }
+  .anlyustec p{
+      font-size: 0.8rem;
+  }
+
+}
